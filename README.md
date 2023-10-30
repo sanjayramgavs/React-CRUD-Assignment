@@ -1,5 +1,5 @@
 ## Project Name
-[![Project Demo](https://youtu.be/KyKJ7sBJT8w)
+![Project Demo](https://youtu.be/KyKJ7sBJT8w)
 
 This is a simple user management web application built with React for the front end and an Express.js server for the back end. It allows you to perform basic CRUD (Create, Read, Update, Delete) operations on user data. Users can be created, edited, and deleted. The project is integrated with a MySQL database to store and retrieve user data.
 
