@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+## Project Name
+[![Project Demo](https://youtu.be/KyKJ7sBJT8w)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple user management web application built with React for the front end and an Express.js server for the back end. It allows you to perform basic CRUD (Create, Read, Update, Delete) operations on user data. Users can be created, edited, and deleted. The project is integrated with a MySQL database to store and retrieve user data.
 
-## Available Scripts
+## Technologies Used
 
-In the project directory, you can run:
+- **Front End**:
+  - React.js
+  - Axios (for making API requests)
+  - React Toastify (for displaying notifications)
+  - Tailwind CSS (for styling)
 
-### `npm start`
+- **Back End**:
+  - Express.js (Node.js framework)
+  - MySQL (as the database)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How the Project Works
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project consists of a React front end and an Express.js back end. The React app allows users to interact with the data stored in the MySQL database.
 
-### `npm test`
+1. **Front End**:
+   - The main application is a user form where you can input a User ID, Email, and Password. You can create a new user by filling in these details and clicking "Create User." Alternatively, you can update an existing user by clicking "Update User" after selecting a user from the list.
+   - The user list is displayed in a table, where you can search for users based on User ID or Email.
+   - Each user in the list has actions to read, edit, and delete.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Back End**:
+   - The Express.js back end serves as the API for the React front end.
+   - It handles the CRUD operations for user data stored in the MySQL database.
+   - The server listens on port 9900.
 
-### `npm run build`
+## Setting Up the Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To set up and run the project, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the project repository.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install the required dependencies for both the front end and back end:
+   - For the front end (React), navigate to the project directory and run `npm install`.
 
-### `npm run eject`
+3. Configure the MySQL database:
+   - Make sure you have a MySQL server running.
+   - Update the database connection details in the Express.js server code (the `connection` object) to match your MySQL server.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Run the Express.js server:
+   - Navigate to the `server` directory and run `npm install` to install server dependencies.
+   - Start the server with `npm start`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+5. Run the React front end:
+   - Navigate to the project root directory.
+   - Start the front end with `npm start`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+6. Access the application:
+   - Open your browser and go to `http://localhost:3000` to interact with the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to add more sections, such as a "Deployment" section if you plan to deploy the project, or any other relevant information to help users understand and use your project.
